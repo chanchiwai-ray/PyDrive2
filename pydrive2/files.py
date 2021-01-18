@@ -211,7 +211,7 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
             self.update(metadata)
         self._ALL_FIELDS = (
             "alternateLink,appDataContents,"
-            "canComment,canReadRevisions,capabilities"
+            "canComment,canReadRevisions,capabilities,"
             "copyable,createdDate,defaultOpenWithLink,description,"
             "downloadUrl,editable,embedLink,etag,explicitlyTrashed,"
             "exportLinks,fileExtension,fileSize,folderColorRgb,"
@@ -224,7 +224,7 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
             "originalFilename,ownedByMe,ownerNames,owners,parents,"
             "permissions,properties,quotaBytesUsed,selfLink,shareable,"
             "shared,sharedWithMeDate,sharingUser,spaces,teamDriveId,"
-            "thumbnail,thumbnailLink,title,trashedDate,trashingUser"
+            "thumbnail,thumbnailLink,title,trashedDate,trashingUser,"
             "userPermission,version,videoMediaMetadata,webContentLink,"
             "webViewLink,writersCanShare"
         )
