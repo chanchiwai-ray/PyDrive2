@@ -519,16 +519,18 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
         """Move a file to the trash.
 
     :raises: ApiRequestError
+    :return: True if it succeeds
     """
-        self._FilesTrash(param=param)
+        return self._FilesTrash(param=param)
 
     def UnTrash(self, param=None):
         """Move a file out of the trash.
     :param param: Additional parameter to file.
     :type param: dict.
     :raises: ApiRequestError
+    :return: True if it succeeds
     """
-        self._FilesUnTrash(param=param)
+        return self._FilesUnTrash(param=param)
 
     def Delete(self, param=None):
         """Hard-delete a file.
@@ -536,8 +538,9 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
     :param param: additional parameter to file.
     :type param: dict.
     :raises: ApiRequestError
+    :return: True if it succeeds
     """
-        self._FilesDelete(param=param)
+        return self._FilesDelete(param=param)
 
     def InsertPermission(self, new_permission, param=None):
         """Insert a new permission. Re-fetches all permissions after call.
@@ -640,6 +643,7 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
     :param param: additional parameter to file.
     :type param: dict.
     :raises: ApiRequestError
+    :return: True if it succeeds
     """
         if param is None:
             param = {}
@@ -664,6 +668,7 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
     :param param: additional parameter to file.
     :type param: dict.
     :raises: ApiRequestError
+    :return: True if it succeeds
     """
         if param is None:
             param = {}
@@ -689,6 +694,7 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
     :param param: additional parameter to file.
     :type param: dict.
     :raises: ApiRequestError
+    :return: True if it succeeds
     """
         if param is None:
             param = {}
