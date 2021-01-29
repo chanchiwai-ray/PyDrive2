@@ -542,6 +542,7 @@ class GoogleDriveFile(ApiAttributeMixin, ApiResource):
     """
         return self._FilesDelete(param=param)
 
+    @LoadAuth
     def InsertPermission(self, new_permission, param=None):
         """Insert a new permission. Re-fetches all permissions after call.
 
